@@ -1,0 +1,82 @@
+#header {
+	width: 540px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background: tan;
+	border-bottom: 1px black;
+
+}
+#header h1 {
+	float: left;
+	padding: 65px 0 0 0;
+	font-size: xx-large;
+}
+#header h2 {
+	float: right;
+	padding: 86px 0 0 0;
+	font-size: small;
+}
+#header * {
+	margin: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+#content {
+	width: 580px;
+	height: 300px;
+	margin: 2, 2, 2, 2 auto;
+	background: #BEE0E0;
+}
+#container {
+	width: 580px;
+	margin-left: 400px;
+	border: 10px solid #FFFFFF;
+}
+/* CSS to control menu*/
+#menu {
+	border: 10px solid #FFFFFF;
+	margin-left: 10px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 116px;
+	text-decoration: none;
+	text-align: center;
+	font: normal medium Arial, Helvetica, sans-serif;
+}
+#youarehere {
+background-color:   #000066;
+color:               #FFFFFF;
+}
+a:link {
+	color: #4B689A;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	color:           #FFFFFF;
+	background-color: #000066;
+}
+/* Footer */
+
+#footer {
+	float: left;
+	width: 580px;
+	background: tan;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	font-size: smaller;
+}
