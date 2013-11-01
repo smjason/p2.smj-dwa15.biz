@@ -6,14 +6,10 @@ class users_controller extends base_controller {
     } 
 
     public function index() {
-        echo "This is the index page";
-
+        
         # Set up the view
         $this->template->content = View::instance('v_users_index');
         $this->template->title = "Home";
-
-        # Pass the data to the view
-        $this->template->content->user_name = $user_name;
 
         # Display the view
         echo $this->template;
@@ -40,11 +36,11 @@ class users_controller extends base_controller {
         $_POST['password'] =sha1($_POST[PASSWORD_SALT.'password']);
         $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
-        /*
+       
         echo "<pre>";
         print_r($_POST);
         echo "<pre>";
-        */
+        
         DB::instance(DB_NAME)->insert_row('users', $_POST);
 
         Router::redirect('/users/login');
