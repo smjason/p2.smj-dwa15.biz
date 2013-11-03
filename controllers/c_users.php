@@ -6,9 +6,10 @@ class users_controller extends base_controller {
     } 
 
     public function index() {
+        echo "This is the index page";
         
         # Set up the view
-        $this->template->content = View::instance('v_users_index');
+        $this->template->content = View::instance('v_index_index');
         $this->template->title = "Home";
 
         # Display the view
@@ -33,14 +34,14 @@ class users_controller extends base_controller {
         $_POST['modified'] = Time::now();
 
 
-        $_POST['password'] =sha1($_POST[PASSWORD_SALT.'password']);
+        $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']); 
         $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
        
-        echo "<pre>";
+        /*echo "<pre>";
         print_r($_POST);
         echo "<pre>";
-        
+        */
         DB::instance(DB_NAME)->insert_row('users', $_POST);
 
         Router::redirect('/users/login');
@@ -52,7 +53,7 @@ class users_controller extends base_controller {
         $this->template->content = View::instance('v_users_login');
         $this->template->title = "Login";
 
-               # Display the view
+        # Display the view
         echo $this->template;
     }
 
@@ -64,42 +65,60 @@ class users_controller extends base_controller {
         #Encrypted password that will be compared to DB
         $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
 
-        $q = "SELECT token 
+        $q = 'SELECT token 
         FROM users 
-        WHERE email = '".$_POST['email']."' 
-        AND password = '".$_POST['password']."'";
-
-
+        WHERE email = "'.$_POST['email'].'" 
+        AND password = "'.$_POST['password'].'"';
 
         // What does the query look like?
-        echo $q;
+        //echo $q;
         
 
         $token = DB::instance(DB_NAME)->select_field($q);
           
-        #Successful Login
+        #Successful Login. Needs "" around token to set cookie
         if ($token) {
-            setcookie('token',$token, strtotime('+1 year'), '/');
-            echo "You are logged in!";
+            setcookie("token",$token, strtotime('+2 year'), '/');
+            Router::redirect("/");
+
         }
         # Failed Login
         else {
-            echo "Login failed, please try again!";
+            echo "Login failed!<a href='/users/login'>Try again?</a>";
         }
+        /*echo "<pre>";
+        print_r($_POST);
+        echo "<pre>";
+       */
     }
 
     public function logout() {
 
-        # Set up the view
-        $this->template->content = View::instance('v_users_logout');
-        $this->template->title = "Logout";
+        # Generate and save a new token for next login
+        $new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
 
-        # Display the view
-        echo $this->template;
-    }
+        # Create the data array we'll use with the update method
+        # In this case, we're only updating one field, so our array only has one entry
+        $data = Array("token" => $new_token);
+
+        # Do the update
+        DB::instance(DB_NAME)->update("users", $data, "WHERE token = '".$this->user->token."'");
+
+        # Delete their token cookie by setting it to a date in the past - effectively logging them out
+        setcookie("token", "", strtotime('-1 year'), '/');
+
+        # Send them back to the main index.
+        Router::redirect("/users/login");
+
+}
     
 
     public function profile($user_name = NULL) {
+
+        # If user is blank, they're not logged in; redirect them to the login page
+        if(!$this->user) {
+        Router::redirect('/users/login');
+    }
 
         # Set up the view
         $this->template->content = View::instance('v_users_profile');
@@ -126,8 +145,6 @@ class users_controller extends base_controller {
         //$view = View::instance ('v_users_profile');
         //$view->user_name = $user_name;
         //echo $view;
-
-        
-    }
+}
 
 } # end of the class
