@@ -12,9 +12,9 @@ class posts_controller extends base_controller {
                 
                 # Only let logged in users access the methods in this controller
                 if(!$this->user) {
-                        die("Members only");
+                        die("Members only. Please login in or sign up.");
                 }
-                
+
         } 
         
          
@@ -53,26 +53,25 @@ class posts_controller extends base_controller {
         View all posts
         -------------------------------------------------------------------------------------------------*/
         public function index() {
-                echo "This is the index page";
                 
                 # Set up view
                 $this->template->content = View::instance('v_posts_index');
                 $this->template->title = "Home";
+
                 # Set up query
                 $q = 'SELECT 
-                            posts.content,
-                            posts.created,
-                            posts.user_id AS post_user_id,
-                            users_users.user_id AS follower_id,
-                            users.first_name,
-                            users.last_name
-                        FROM posts
-                        INNER JOIN users_users 
-                            ON posts.user_id = users_users.user_id_followed
-                        INNER JOIN users 
-                            ON posts.user_id = users.user_id
-                        WHERE users_users.user_id = '.$this->user->user_id;
-                
+                    posts.content,
+                    posts.created,
+                    posts.user_id AS post_user_id,
+                    users.first_name,
+                    users.last_name
+                    FROM posts
+                    INNER JOIN users_users
+                    ON posts.user_id = users_users.user_id_followed
+                    INNER JOIN users
+                    ON posts.user_id =users.user_id
+                    WHERE users_users.user_id = '.$this->user->user_id;
+              
                 # Run query        
                 $posts = DB::instance(DB_NAME)->select_rows($q);
                 

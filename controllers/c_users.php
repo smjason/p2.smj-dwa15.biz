@@ -6,7 +6,6 @@ class users_controller extends base_controller {
     } 
 
     public function index() {
-        echo "This is the index page";
         
         # Set up the view
         $this->template->content = View::instance('v_index_index');
@@ -78,8 +77,8 @@ class users_controller extends base_controller {
           
         #Successful Login. Needs "" around token to set cookie
         if ($token) {
-            setcookie("token",$token, strtotime('+2 year'), '/');
-            Router::redirect("/");
+            setcookie("token",$token, strtotime('+1 year'), '/');
+            Router::redirect("/users/index");
 
         }
         # Failed Login
