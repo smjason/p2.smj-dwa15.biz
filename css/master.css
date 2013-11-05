@@ -21,10 +21,10 @@
 #header ul {
 	position: relative;
 	float: right;
-	padding: 15px 0 0 0;
+	padding: 10px 0 0 0;
 	list-style-type: none;
 	font: normal medium Arial, Helvetica, sans-serif;
-	font-size: .7em;
+	font-size: .8em;
 }
 #header li {
 	display: inline;

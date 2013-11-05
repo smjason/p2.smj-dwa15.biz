@@ -4,7 +4,7 @@
 
     <?php if(isset($connections[$user['user_id']])): ?>
     <br>
-        <FORM METHOD="LINK" ACTION='/posts/unfollow/<?=$user['user_id']?>'>
+        <FORM METHOD="LINK" ACTION="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"'/posts/unfollow/<?=$user['user_id']?>'>
         <INPUT TYPE="submit" VALUE="Unfollow">
         </FORM>
     <?php else: ?>

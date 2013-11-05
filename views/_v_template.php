@@ -13,28 +13,35 @@
 <body>	
 <div id ="container">
 <div id = "header">
-	<h1>BeachBlog</h1>
-	<ul>
-        <li><a href="/users/logout">Logout</a></li>
+	<h1><a href="/users/index">BeachBlog</a></h1>
+		<ul>
+		<?php if($user): ?>
+        <li><a href="/users/logout">Logout |</a></li>
+        <li><a href="/users/profile">My Profile</a></li>
+    	</ul>
+    	<?php else: ?>
+    	<ul>
+		<li><a href="/users/signup">Sign up</a></li> 
     </ul>
+		<?php endif; ?>
 </div>
 <div id = "content">
-			<div id ="menu">
-			<?php if($user): ?>
+<div id ="menu">
+		<?php if($user): ?>
 			<ul>
-				<li><a href='/'>Home</a></li>
-				<li><a href='/posts/add'>Add Post</a></li>
-				<li><a href='/posts'>View Post</a></li>
-				<li><a href='/posts/users'>Follow Users</a></li>
-			</ul>
-			<?php else: ?>
-			<ul>
-				<li><a href='/users/signup'>Sign up</a></li>
-				<li><a href='/users/login'>Log in</a></li>
-			</ul>
-			<?php endif; ?>
-		</div>
-		<?php if(isset($content)) echo $content; ?>
+		<li><a href='/'>Home</a></li>
+		<li><a href='/posts/add'>Add Post</a></li>
+		<li><a href='/posts'>View Post</a></li>
+		<li><a href='/posts/users'>Follow Users</a></li>
+		</ul>
+		<?php else: ?>
+		<ul>
+		<li><a href='/users/signup'>Sign up</a></li>
+		<li><a href='/users/login'>Log in</a></li>
+	</ul>
+	<?php endif; ?>
+</div>
+	<?php if(isset($content)) echo $content; ?>
 
 	<?php if(isset($client_files_body)) echo $client_files_body; ?>
 
