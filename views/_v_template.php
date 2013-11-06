@@ -8,27 +8,23 @@
 	<!-- Controller Specific JS/CSS -->
 	<?php if(isset($client_files_head)) echo $client_files_head; ?>
 	<link href="/css/master.css" rel="stylesheet" type="text/css" media="screen" />
-
 </head>
 <body>	
 <div id ="container">
 <div id = "header">
 	<h1><a href="/users/index">BeachBlog</a></h1>
-		<ul>
+	<ul>
 		<?php if($user): ?>
         <li><a href="/users/logout">Logout |</a></li>
-        <li><a href="/users/profile">My Profile</a></li>
-    	</ul>
-    	<?php else: ?>
-    	<ul>
-		<li><a href="/users/signup">Sign up</a></li> 
+        <li><a href="/users/profile">My Profile |</a></li>
+        <li>Logged in as <?=$user->first_name?></li>
     </ul>
 		<?php endif; ?>
 </div>
 <div id = "content">
 <div id ="menu">
 		<?php if($user): ?>
-			<ul>
+	<ul>
 		<li><a href='/'>Home</a></li>
 		<li><a href='/posts/add'>Add Post</a></li>
 		<li><a href='/posts'>View Post</a></li>

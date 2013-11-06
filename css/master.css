@@ -35,6 +35,11 @@
 	text-transform: uppercase;
 	color: #FFFFFF;
 }
+#profile ul{
+	list-style-type: none;
+	font: normal medium Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
 #content {
 	width: 580px;
 	height: auto;

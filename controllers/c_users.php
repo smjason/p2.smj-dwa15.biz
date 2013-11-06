@@ -32,15 +32,11 @@ class users_controller extends base_controller {
         $_POST['created'] = Time::now(); 
         $_POST['modified'] = Time::now();
 
-
+        #Hashes password and token
         $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']); 
         $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
        
-        /*echo "<pre>";
-        print_r($_POST);
-        echo "<pre>";
-        */
         DB::instance(DB_NAME)->insert_row('users', $_POST);
 
         Router::redirect('/users/login');
@@ -68,9 +64,6 @@ class users_controller extends base_controller {
         FROM users 
         WHERE email = "'.$_POST['email'].'" 
         AND password = "'.$_POST['password'].'"';
-
-        // What does the query look like?
-        //echo $q;
         
 
         $token = DB::instance(DB_NAME)->select_field($q);
@@ -85,10 +78,7 @@ class users_controller extends base_controller {
         else {
             echo "Login failed!<a href='/users/login'>Try again?</a>";
         }
-        /*echo "<pre>";
-        print_r($_POST);
-        echo "<pre>";
-       */
+      
     }
 
     public function logout() {
@@ -134,16 +124,31 @@ class users_controller extends base_controller {
 
         $this->template->client_files_body = Utils::load_client_files($client_files_body);
 
-
         # Pass the data to the view
         $this->template->content->user_name = $user_name;
 
         # Display the view
         echo $this->template;
 
-        //$view = View::instance ('v_users_profile');
-        //$view->user_name = $user_name;
-        //echo $view;
 }
+public function p_profile() {
 
+        $_POST['modified'] = Time::now();
+
+        $q = "UPDATE users
+            SET first_name ='".$_POST['first_name']."',
+            last_name ='".$_POST['last_name']."',
+            email ='".$_POST['email']."'
+            WHERE user_id = '".$this->user->user_id."'";
+
+        DB::instance(DB_NAME)->select_row($q);
+        Router::redirect ('/users/profile');
+
+
+        //$data = Array("email" => $_POST);
+
+        //DB::instance(DB_NAME)->update("users", $data, "WHERE email = '".$this->user->email."'");
+
+
+}
 } # end of the class
