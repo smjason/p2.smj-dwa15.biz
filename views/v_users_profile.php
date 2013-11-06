@@ -10,15 +10,15 @@
 	<table>
 		<tr>
             <td><label>First Name:</label></td>
-            <td><input type='text' name='first_name' size='35'required placeholder= "Enter Updated First Name" /></td>
+            <td><input type='text' name='first_name' size='35'required= "required" /></td>
 	  		</tr>
 	  		<tr>
             <td><label>Last Name:</label></td>
-            <td><input type='text' name='last_name' size='35' required placeholder = "Enter Updated Last Name" /></td>
+            <td><input type='text' name='last_name' size='35' required= "required" /></td>
 	  		</tr>
           	<tr>
             <td><label>Email:</label></td>
-            <td><input type='email' name='email' size='35' required placeholder= "Enter Updated Email Address" /></td>
+            <td><input type='email' name='email' size='35' required= "required"/></td>
 	  		</tr>
 	  	 		
 	</table>

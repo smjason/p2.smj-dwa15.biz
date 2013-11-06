@@ -4,11 +4,11 @@
 	<table>
           <tr>
             <td><label>Email:</label></td>
-            <td><input type='email' name='email' size= '25' required placeholder= "Enter a valid email address" /></td>
+            <td><input type='email' name='email' size= '25' required= "required" /></td>
 	  		     </tr>
 			       <tr>
             <td><label>Password:</label></td>
-            <td><input type='password' name='password' size ='25'required placeholder= "Enter your password" onkeypress="capLock(event)"/></td>
+            <td><input type='password' name='password' size ='25'required= "required" onkeypress="capLock(event)"/></td>
           </tr>                    
 </table>
           <br>

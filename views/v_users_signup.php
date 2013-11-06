@@ -3,19 +3,19 @@
 <table>
       <tr>
         <td><label>First Name:</label></td>
-             <td><input type= 'text' name='first_name' size ='25'required placeholder= "Enter your First Name"></td>
+             <td><input type= 'text' name='first_name' size ='25'required= "required"></td>
 	  	      </tr>
 		        <tr>
                 <td><label>Last Name:</label></td>
-                <td><input type='text' name='last_name' size ='25'required placeholder= "Enter your Last Name"></td>
+                <td><input type='text' name='last_name' size ='25'required= "required"></td>
                  </tr>
                  <tr>
                  <td><label>Email:</label></td>
-                <td><input type='email' name='email' size ='25'required placeholder= "Enter a valid email address"></td>
+                <td><input type='email' name='email' size ='25'required= "required"></td>
                </tr>
       	     <tr>
              <td><label>Password:</label></td>
-        <td><input type='password' name='password' size ='25'required placeholder= "Enter your password" onkeypress="capLock(event)"/></td>
+        <td><input type='password' name='password' size ='25'required= "required" onkeypress="capLock(event)"/></td>
        </tr>
          
 </table>

@@ -25,7 +25,7 @@
 <div id ="menu">
 		<?php if($user): ?>
 	<ul>
-		<li><a href='/'>Home</a></li>
+		<li><a href='/users/index'>Home</a></li>
 		<li><a href='/posts/add'>Add Post</a></li>
 		<li><a href='/posts'>View Post</a></li>
 		<li><a href='/posts/users'>Follow Users</a></li>
