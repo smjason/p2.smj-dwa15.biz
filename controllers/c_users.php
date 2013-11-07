@@ -86,17 +86,16 @@ class users_controller extends base_controller {
         # Generate and save a new token for next login
         $new_token = sha1(TOKEN_SALT.$this->user->email.Utils::generate_random_string());
 
-        # Create the data array we'll use with the update method
-        # In this case, we're only updating one field, so our array only has one entry
+        # Create the data array 
         $data = Array("token" => $new_token);
 
-        # Do the update
+        # Update the token
         DB::instance(DB_NAME)->update("users", $data, "WHERE token = '".$this->user->token."'");
 
-        # Delete their token cookie by setting it to a date in the past - effectively logging them out
+        # Deletes their token cookie 
         setcookie("token", "", strtotime('-1 year'), '/');
 
-        # Send them back to the main index.
+        # Send them back to the login page.
         Router::redirect("/users/login");
 
 }
@@ -143,12 +142,6 @@ public function p_profile() {
 
         DB::instance(DB_NAME)->select_row($q);
         Router::redirect ('/users/profile');
-
-
-        //$data = Array("email" => $_POST);
-
-        //DB::instance(DB_NAME)->update("users", $data, "WHERE email = '".$this->user->email."'");
-
 
 }
 } # end of the class

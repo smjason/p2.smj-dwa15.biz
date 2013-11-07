@@ -1,4 +1,3 @@
-
 <h2>Log In</h2>
 <form name= "login" method='POST' action='/users/p_login'>
 	<table>
@@ -8,7 +7,7 @@
 	  		     </tr>
 			       <tr>
             <td><label>Password:</label></td>
-            <td><input type='password' name='password' size ='25'required= "required" onkeypress="capLock(event)"/></td>
+            <td><input type='password' name='password' size ='25' required= "required" onkeypress="capLock(event)"/></td>
           </tr>                    
 </table>
           <br>

@@ -39,11 +39,21 @@
 	list-style-type: none;
 	font: normal medium Arial, Helvetica, sans-serif;
 	font-size: 1em;
+	padding: 0 0 0 5px;
+}
+#post_add ul{
+	list-style-type: none;
 }
 #content {
 	width: 580px;
 	height: auto;
 	background: #BEE0E0;
+}
+#content h1{ 
+	padding-left: 5px;
+}
+#content p{ 
+	padding-left: 5px;
 }
 #container {
 	width: 580px;
@@ -87,13 +97,12 @@ a:link {
 /* Footer */
 
 #footer {
-	float: left;
-	width: 580px;
+	border: 1px solid tan;
+	width: 579px;
 	background: tan;
 }
 
 #footer p {
-	border: 3px solid tan;
 	margin: 0;
 	text-align: center;
 	font-size: smaller;

@@ -1,3 +1,5 @@
+<h1><?=$user->first_name?>, Here are the posts of the users that you are following.</h1>
+
 <?php foreach($posts as $post): ?>
 
 <article>
@@ -6,9 +8,9 @@
 
     <p><?=$post['content']?></p>
 
-    <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
+    <p><time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
         <?=Time::display($post['created'])?>
-    </time>
+    </time></p>
 
 </article>
 

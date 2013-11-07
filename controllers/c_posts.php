@@ -2,9 +2,6 @@
 
 class posts_controller extends base_controller {
         
-        /*-------------------------------------------------------------------------------------------------
-        
-        -------------------------------------------------------------------------------------------------*/
         public function __construct() {
                 
                 # Make sure the base controller construct gets called
@@ -12,15 +9,13 @@ class posts_controller extends base_controller {
                 
                 # Only let logged in users access the methods in this controller
                 if(!$this->user) {
-                        die("Members only. Please login in or sign up.");
+                        die("MEMBERS ONLY. Please <a href='/users/login'>login in</a> or <a href='/users/signup'/a>sign up.");
                 }
 
-        } 
-        
-         
-        /*-------------------------------------------------------------------------------------------------
-        Display a new post form
-        -------------------------------------------------------------------------------------------------*/
+    } 
+     
+        #Display a new post form
+       
         public function add() {
 
         # Setup view
@@ -33,9 +28,9 @@ class posts_controller extends base_controller {
     }      
         
         
-        /*-------------------------------------------------------------------------------------------------
-        Process new posts
-        -------------------------------------------------------------------------------------------------*/
+        
+        #Create a new post
+       
         public function p_add() {
                 
                 $_POST['user_id']  = $this->user->user_id;
@@ -46,12 +41,12 @@ class posts_controller extends base_controller {
                 
                 Router::redirect('/posts/add');
              
-        }
+    }
         
         
-        /*-------------------------------------------------------------------------------------------------
-        View all posts
-        -------------------------------------------------------------------------------------------------*/
+      
+        #View all posts
+
         public function index() {
                 
                 # Set up view
@@ -81,10 +76,8 @@ class posts_controller extends base_controller {
                 # Render view
                 echo $this->template;
                 
-        }
-        /*-------------------------------------------------------------------------------------------------
+    }
         
-        -------------------------------------------------------------------------------------------------*/
         public function users() {
                 
                 # Set up view
@@ -112,11 +105,11 @@ class posts_controller extends base_controller {
                 # Render view
                 echo $this->template;
                 
-        }
+    }
         
-         /*-------------------------------------------------------------------------------------------------
-        Creates a row in the users_users table representing that one user is following another
-        -------------------------------------------------------------------------------------------------*/
+       
+        #Creates a row in the users_users table representing that one user is following another
+        
         public function follow($user_id_followed) {
         
             # Prepare the data array to be inserted
@@ -132,12 +125,12 @@ class posts_controller extends base_controller {
             # Send them back
             Router::redirect("/posts/users");
         
-        }
+    }
         
         
-        /*-------------------------------------------------------------------------------------------------
-        Removes the specified row in the users_users table, removing the follow between two users
-        -------------------------------------------------------------------------------------------------*/
+      
+        #Removes the specified row in the users_users table, removing the follow between two users
+     
         public function unfollow($user_id_followed) {
         
             # Set up the where condition
@@ -149,7 +142,7 @@ class posts_controller extends base_controller {
             # Send them back
             Router::redirect("/posts/users");
         
-        }
+    }
         
         
         

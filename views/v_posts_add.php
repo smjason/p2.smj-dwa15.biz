@@ -1,8 +1,8 @@
 <form method='POST' action='/posts/p_add'>
-
-
-		<textarea name='content'></textarea>
-		<input type='Submit' value= 'Add New Post'>
-	
-
+<div id="post_add">
+	<ul>
+		<li><textarea name='content'></textarea></li>
+	</ul>
+		<input type='Submit' value= 'Add New Post'>	
+</div>
 </form>
