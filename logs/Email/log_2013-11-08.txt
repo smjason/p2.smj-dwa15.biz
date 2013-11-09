@@ -1,0 +1,40 @@
+2013-11-08 2:51:59 - INFO --> -------------------------- 
+2013-11-08 2:51:59 - INFO --> Controller/Method: users/p_profile 
+2013-11-08 2:51:59 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-08 2:51:59 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-08 2:51:59 - INFO --> CC:  
+2013-11-08 2:51:59 - INFO --> BCC:  
+2013-11-08 2:51:59 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-08 2:51:59 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE WHERE email = '39' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email = '39'' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'e71c1ef3d97 
+2013-11-08 2:52:55 - INFO --> -------------------------- 
+2013-11-08 2:52:55 - INFO --> Controller/Method: users/p_profile 
+2013-11-08 2:52:55 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-08 2:52:55 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-08 2:52:55 - INFO --> CC:  
+2013-11-08 2:52:55 - INFO --> BCC:  
+2013-11-08 2:52:55 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-08 2:52:55 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE WHERE email = '39' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email = '39'' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'e71c1ef3d97 
+2013-11-08 2:53:06 - INFO --> -------------------------- 
+2013-11-08 2:53:06 - INFO --> Controller/Method: users/p_profile 
+2013-11-08 2:53:06 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-08 2:53:06 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-08 2:53:06 - INFO --> CC:  
+2013-11-08 2:53:06 - INFO --> BCC:  
+2013-11-08 2:53:06 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-08 2:53:06 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE WHERE email = '39' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email = '39'' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'e71c1ef3d97 
+2013-11-08 2:53:17 - INFO --> -------------------------- 
+2013-11-08 2:53:17 - INFO --> Controller/Method: users/p_profile 
+2013-11-08 2:53:17 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-08 2:53:17 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-08 2:53:17 - INFO --> CC:  
+2013-11-08 2:53:17 - INFO --> BCC:  
+2013-11-08 2:53:17 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-08 2:53:17 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE WHERE email = '39' You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE email = '39'' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'e71c1ef3d97 

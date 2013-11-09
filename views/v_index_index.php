@@ -4,6 +4,7 @@
 <br>
 <h3>+1 Features</h3>
 <ul>
+	<li>Confirmation email is sent out to new users after sign up</li>
 	<li>Logged in users can view their info and update their email address</li>
 </ul>
-<p>I had put all the time that I had and then some, but it still wasn't enough. I have submitted this project knowing that it has shortcomings. However, after all the time that I have spent on this, I wanted to make sure that it had been submitted.</p>
+<br>

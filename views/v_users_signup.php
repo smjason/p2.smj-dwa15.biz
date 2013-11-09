@@ -19,6 +19,16 @@
        </tr>
          
 </table>
+      <?php if($error && $error == 'user-exists'): ?>
+         <div id="error">
+        This user already exists
+        </div>
+      <!-- Checking for blank fields, but wanted to add more error checking -->  
+      <?php elseif(isset($error) && $error == 'invalid-login'): ?>
+        <div id="error">
+        Your login failed.
+        </div>
+      <?php endif; ?>
         <br>
         <input type='submit' value='Sign Up'>
 

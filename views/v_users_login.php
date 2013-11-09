@@ -9,7 +9,16 @@
             <td><label>Password:</label></td>
             <td><input type='password' name='password' size ='25' required= "required" onkeypress="capLock(event)"/></td>
           </tr>                    
-</table>
+  </table>
+
+      <?php if($error && $error == 'user-exists'): ?>
+        This user already exists
+      <!-- Checking for blank fields, but wanted to add more error checking -->  
+      <?php elseif(isset($error) && $error == 'invalid-login'): ?>
+      <div id="error">
+        Your login failed.
+      </div>
+      <?php endif; ?>
           <br>
           <input type='submit' value='Log In'>
 </form

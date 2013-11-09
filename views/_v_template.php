@@ -43,7 +43,7 @@
 </div>
 <div id="footer">
 	<p>Copyright &copy; 2013 smj-dwa15 dot biz - Email: <a href="mailto:jsjason111@gmail.com">sjason111@gmail.com</a></p>
-	<p>This website has been updated on November 2, 2013</p>
+	<p>This website has been updated on November 8, 2013</p>
 </div>
 </div>
 </div>

@@ -1,0 +1,211 @@
+2013-11-07 0:26:08 - INFO --> -------------------------- 
+2013-11-07 0:26:08 - INFO --> Controller/Method: users/p_login 
+2013-11-07 0:26:08 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 0:26:08 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 0:26:08 - INFO --> CC:  
+2013-11-07 0:26:08 - INFO --> BCC:  
+2013-11-07 0:26:08 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 0:26:08 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 9fae1f5ce5f4e136c303d4a449677361
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => 
+    [password] => 
+)
+</pre><h 
+2013-11-07 16:53:15 - INFO --> -------------------------- 
+2013-11-07 16:53:15 - INFO --> Controller/Method: users/p_login 
+2013-11-07 16:53:15 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 16:53:15 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 16:53:15 - INFO --> CC:  
+2013-11-07 16:53:15 - INFO --> BCC:  
+2013-11-07 16:53:15 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 16:53:15 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 7a1350eb655338b11f5d3e207a0c5183
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => scott_jason@harvard.edu
+    [p 
+2013-11-07 18:41:01 - INFO --> -------------------------- 
+2013-11-07 18:41:01 - INFO --> Controller/Method: users/p_login 
+2013-11-07 18:41:01 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 18:41:01 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 18:41:01 - INFO --> CC:  
+2013-11-07 18:41:01 - INFO --> BCC:  
+2013-11-07 18:41:01 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 18:41:01 - INFO --> Body: <h2>SQL Error</h2> SELECT token 
+        FROM users 
+        WHERE email = "scott_jason@harvard.edu" 
+        AND password = "909386997f08ecddd81447a1567ba046402a44ec" No database selected<h2>Query History</h2>0 = SELECT token 
+        FROM users 
+        WHERE email = "scott_jason@harvard.edu" 
+    
+2013-11-07 19:45:18 - INFO --> -------------------------- 
+2013-11-07 19:45:18 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:45:18 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:45:18 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:45:18 - INFO --> CC:  
+2013-11-07 19:45:18 - INFO --> BCC:  
+2013-11-07 19:45:18 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:45:18 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank1@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank1@gma 
+2013-11-07 19:46:56 - INFO --> -------------------------- 
+2013-11-07 19:46:56 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:46:56 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:46:56 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:46:56 - INFO --> CC:  
+2013-11-07 19:46:56 - INFO --> BCC:  
+2013-11-07 19:46:56 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:46:56 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank1@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank1@gma 
+2013-11-07 19:49:27 - INFO --> -------------------------- 
+2013-11-07 19:49:27 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:49:27 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:49:27 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:49:27 - INFO --> CC:  
+2013-11-07 19:49:27 - INFO --> BCC:  
+2013-11-07 19:49:27 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:49:27 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank1@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank1@gma 
+2013-11-07 19:49:35 - INFO --> -------------------------- 
+2013-11-07 19:49:35 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:49:35 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:49:35 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:49:35 - INFO --> CC:  
+2013-11-07 19:49:35 - INFO --> BCC:  
+2013-11-07 19:49:35 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:49:35 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank1@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank1@gma 
+2013-11-07 19:49:43 - INFO --> -------------------------- 
+2013-11-07 19:49:43 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:49:43 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:49:43 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:49:43 - INFO --> CC:  
+2013-11-07 19:49:43 - INFO --> BCC:  
+2013-11-07 19:49:43 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:49:43 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank2@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank2@gma 
+2013-11-07 19:49:50 - INFO --> -------------------------- 
+2013-11-07 19:49:50 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:49:50 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:49:50 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:49:50 - INFO --> CC:  
+2013-11-07 19:49:50 - INFO --> BCC:  
+2013-11-07 19:49:50 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:49:50 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank@gmail 
+2013-11-07 19:52:36 - INFO --> -------------------------- 
+2013-11-07 19:52:36 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:52:36 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:52:36 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:52:36 - INFO --> CC:  
+2013-11-07 19:52:36 - INFO --> BCC:  
+2013-11-07 19:52:36 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:52:36 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 19:56:41 - INFO --> -------------------------- 
+2013-11-07 19:56:41 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:56:41 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:56:41 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:56:41 - INFO --> CC:  
+2013-11-07 19:56:41 - INFO --> BCC:  
+2013-11-07 19:56:41 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:56:41 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank1@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank1@gma 
+2013-11-07 19:58:15 - INFO --> -------------------------- 
+2013-11-07 19:58:15 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 19:58:15 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 19:58:15 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 19:58:15 - INFO --> CC:  
+2013-11-07 19:58:15 - INFO --> BCC:  
+2013-11-07 19:58:15 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 19:58:15 - INFO --> Body: <h2>SQL Error</h2> UPDATE email SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 20:00:59 - INFO --> -------------------------- 
+2013-11-07 20:00:59 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:00:59 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:00:59 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:00:59 - INFO --> CC:  
+2013-11-07 20:00:59 - INFO --> BCC:  
+2013-11-07 20:00:59 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:00:59 - INFO --> Body: <h2>SQL Error</h2> UPDATE email SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 20:01:34 - INFO --> -------------------------- 
+2013-11-07 20:01:34 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:01:34 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:01:34 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:01:34 - INFO --> CC:  
+2013-11-07 20:01:34 - INFO --> BCC:  
+2013-11-07 20:01:34 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:01:34 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank2@gmail.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank2@gma 
+2013-11-07 20:07:29 - INFO --> -------------------------- 
+2013-11-07 20:07:29 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:07:29 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:07:29 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:07:29 - INFO --> CC:  
+2013-11-07 20:07:29 - INFO --> BCC:  
+2013-11-07 20:07:29 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:07:29 - INFO --> Body: <h2>SQL Error</h2> UPDATE email SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 20:09:37 - INFO --> -------------------------- 
+2013-11-07 20:09:37 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:09:37 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:09:37 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:09:37 - INFO --> CC:  
+2013-11-07 20:09:37 - INFO --> BCC:  
+2013-11-07 20:09:37 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:09:37 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 20:39:51 - INFO --> -------------------------- 
+2013-11-07 20:39:51 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:39:51 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:39:51 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:39:51 - INFO --> CC:  
+2013-11-07 20:39:51 - INFO --> BCC:  
+2013-11-07 20:39:51 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:39:51 - INFO --> Body: <h2>SQL Error</h2> UPDATE users SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = 'abf81d902d601867de46977b8271c600d676ee5c'
+					 
+2013-11-07 20:44:10 - INFO --> -------------------------- 
+2013-11-07 20:44:10 - INFO --> Controller/Method: users/p_profile 
+2013-11-07 20:44:10 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-07 20:44:10 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-07 20:44:10 - INFO --> CC:  
+2013-11-07 20:44:10 - INFO --> BCC:  
+2013-11-07 20:44:10 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-07 20:44:10 - INFO --> Body: <h2>SQL Error</h2> UPDATE UPDATE users
+            SET email ='frank3@aol.com'
+            WHERE user_id = '38' SE  You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDATE users
+            SET email ='frank3@aol.c 

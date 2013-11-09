@@ -1,0 +1,224 @@
+2013-11-06 22:51:42 - INFO --> -------------------------- 
+2013-11-06 22:51:42 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 22:51:42 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 22:51:42 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 22:51:42 - INFO --> CC:  
+2013-11-06 22:51:42 - INFO --> BCC:  
+2013-11-06 22:51:42 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 22:51:42 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Scott
+    [last_name] => 
+2013-11-06 22:52:17 - INFO --> -------------------------- 
+2013-11-06 22:52:17 - INFO --> Controller/Method: users/p_login 
+2013-11-06 22:52:17 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 22:52:17 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 22:52:17 - INFO --> CC:  
+2013-11-06 22:52:17 - INFO --> BCC:  
+2013-11-06 22:52:17 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 22:52:17 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 22:57:51 - INFO --> -------------------------- 
+2013-11-06 22:57:51 - INFO --> Controller/Method: users/p_login 
+2013-11-06 22:57:51 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 22:57:51 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 22:57:51 - INFO --> CC:  
+2013-11-06 22:57:51 - INFO --> BCC:  
+2013-11-06 22:57:51 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 22:57:51 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 23:09:19 - INFO --> -------------------------- 
+2013-11-06 23:09:19 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:09:19 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:09:19 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:09:19 - INFO --> CC:  
+2013-11-06 23:09:19 - INFO --> BCC:  
+2013-11-06 23:09:19 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:09:19 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘Localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 23:13:59 - INFO --> -------------------------- 
+2013-11-06 23:13:59 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:13:59 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:13:59 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:13:59 - INFO --> CC:  
+2013-11-06 23:13:59 - INFO --> BCC:  
+2013-11-06 23:13:59 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:13:59 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 23:14:58 - INFO --> -------------------------- 
+2013-11-06 23:14:58 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:14:58 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:14:58 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:14:58 - INFO --> CC:  
+2013-11-06 23:14:58 - INFO --> BCC:  
+2013-11-06 23:14:58 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:14:58 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '“localhost”' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 23:20:29 - INFO --> -------------------------- 
+2013-11-06 23:20:29 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:20:29 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:20:29 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:20:29 - INFO --> CC:  
+2013-11-06 23:20:29 - INFO --> BCC:  
+2013-11-06 23:20:29 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:20:29 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passw 
+2013-11-06 23:21:29 - INFO --> -------------------------- 
+2013-11-06 23:21:29 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:21:29 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:21:29 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:21:29 - INFO --> CC:  
+2013-11-06 23:21:29 - INFO --> BCC:  
+2013-11-06 23:21:29 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:21:29 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘locahost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => sjason111@gmail.com
+    [passwo 
+2013-11-06 23:30:21 - INFO --> -------------------------- 
+2013-11-06 23:30:21 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:30:21 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:30:21 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:30:21 - INFO --> CC:  
+2013-11-06 23:30:21 - INFO --> BCC:  
+2013-11-06 23:30:21 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:30:21 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘locahost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Jeff
+    [last_name] => J 
+2013-11-06 23:33:03 - INFO --> -------------------------- 
+2013-11-06 23:33:03 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:33:03 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:33:03 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:33:03 - INFO --> CC:  
+2013-11-06 23:33:03 - INFO --> BCC:  
+2013-11-06 23:33:03 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:33:03 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Jeff
+    [last_name] =>  
+2013-11-06 23:33:14 - INFO --> -------------------------- 
+2013-11-06 23:33:14 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:33:14 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:33:14 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:33:14 - INFO --> CC:  
+2013-11-06 23:33:14 - INFO --> BCC:  
+2013-11-06 23:33:14 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:33:14 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Jeff
+    [last_name] =>  
+2013-11-06 23:46:09 - INFO --> -------------------------- 
+2013-11-06 23:46:09 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:46:09 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:46:09 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:46:09 - INFO --> CC:  
+2013-11-06 23:46:09 - INFO --> BCC:  
+2013-11-06 23:46:09 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:46:09 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Jeff
+    [last_name] =>  
+2013-11-06 23:47:39 - INFO --> -------------------------- 
+2013-11-06 23:47:39 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:47:39 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:47:39 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:47:39 - INFO --> CC:  
+2013-11-06 23:47:39 - INFO --> BCC:  
+2013-11-06 23:47:39 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:47:39 - INFO --> Body: <h2>SQL Error</h2>Access denied for user 'â€™smjdwabi_p2â€'@'localhost' (using password: YES)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [fir 
+2013-11-06 23:49:14 - INFO --> -------------------------- 
+2013-11-06 23:49:14 - INFO --> Controller/Method: users/p_signup 
+2013-11-06 23:49:14 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:49:14 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:49:14 - INFO --> CC:  
+2013-11-06 23:49:14 - INFO --> BCC:  
+2013-11-06 23:49:14 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:49:14 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_signup<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [first_name] => Jeff
+    [last_name] =>  
+2013-11-06 23:50:26 - INFO --> -------------------------- 
+2013-11-06 23:50:26 - INFO --> Controller/Method: users/p_login 
+2013-11-06 23:50:26 - INFO --> From: BeachBlog (scott_jason@harvard.edu) 
+2013-11-06 23:50:26 - INFO --> To: BeachBlog (sjason111@gmail.com),  
+2013-11-06 23:50:26 - INFO --> CC:  
+2013-11-06 23:50:26 - INFO --> BCC:  
+2013-11-06 23:50:26 - INFO --> Subject: BeachBlog SQL Error 
+2013-11-06 23:50:26 - INFO --> Body: <h2>SQL Error</h2>Unknown MySQL server host '‘localhost’' (1)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 691c2f9684aee69b8ce4b16f52e3717d
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => scott_jason@harvard.edu
+    [p 

@@ -15,11 +15,14 @@ class users_controller extends base_controller {
         echo $this->template;
     }
 
-    public function signup() {
+    public function signup($error = NULL) {
 
         # Set up the view
         $this->template->content = View::instance('v_users_signup');
-        $this->template->title = "Signup";
+        $this->template->title = "Sign Up";
+
+        # Pass data to the view
+        $this->template->content->error = $error;
 
         # Display the view
         echo $this->template;
@@ -27,26 +30,63 @@ class users_controller extends base_controller {
 
     public function p_signup() {
 
+        #Sanitize Data
+        $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+
+        #Email and password
+        $q = "SELECT * 
+        FROM users 
+        WHERE email = '".$_POST['email']."'"; 
         
-        #Enters creation and modification dates
-        $_POST['created'] = Time::now(); 
-        $_POST['modified'] = Time::now();
-
-        #Hashes password and token
-        $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']); 
-        $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
-
-       
-        DB::instance(DB_NAME)->insert_row('users', $_POST);
-
-        Router::redirect('/users/login');
+        #DB query
+        $user_exists = DB::instance(DB_NAME)->select_rows($q);
+        
+        #Does email exist
+            if(!empty($user_exists)){
+            
+                #Send to Login page with error message
+                Router::redirect('/users/signup/user-exists');
+            }
+            
+            else {
+                
+                #Mail Setup
+                $to = $_POST['email'];
+                $subject = "Welcome to BeachBlog!";
+                $message = "We appreciate that you have signed up! Now take off the shoes, get your feet in the sand, and blog away!";
+                $from = 'vip@beachblog.com';
+                $headers = "From:" . $from;         
+                
+                #Enters creation and modification dates
+                $_POST['created'] = Time::now(); 
+                $_POST['modified'] = Time::now();
+        
+                #Hashes password and token
+                $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']); 
+                $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
+        
+                #user imported into the DB
+                $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
+        
+                #Send an email to the new user
+                if(!$this->user) {
+                    mail($to, $subject, $message, $headers);
+                }         
+        
+                # Send to the login page
+                Router::redirect('/users/login');
+            }
     }
+    
 
-    public function login($login = NULL) {
+    public function login($error = NULL) {
 
         # Set up the view
         $this->template->content = View::instance('v_users_login');
         $this->template->title = "Login";
+
+        # Pass data to the view
+        $this->template->content->error = $error;
 
         # Display the view
         echo $this->template;
@@ -74,9 +114,11 @@ class users_controller extends base_controller {
             Router::redirect("/users/index");
 
         }
-        # Failed Login
-        else {
-            echo "Login failed!<a href='/users/login'>Try again?</a>";
+
+        #Failed login 
+            if(!$token) {
+        
+             Router::redirect("/users/login/invalid-login"); 
         }
       
     }
@@ -134,13 +176,15 @@ public function p_profile() {
 
         $_POST['modified'] = Time::now();
 
-        $q = "UPDATE users
-            SET first_name ='".$_POST['first_name']."',
-            last_name ='".$_POST['last_name']."',
-            email ='".$_POST['email']."'
-            WHERE user_id = '".$this->user->user_id."'";
+        # Generate and save a new email
+        $new_email =$_POST['email'];
 
-        DB::instance(DB_NAME)->select_row($q);
+        #Create the data array 
+        $data = Array('email' => $new_email);
+
+        #Update the email
+        DB::instance(DB_NAME)->update("users", $data, "WHERE email = '".$this->user->email."'");
+
         Router::redirect ('/users/profile');
 
 }
